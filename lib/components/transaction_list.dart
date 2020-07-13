@@ -50,7 +50,7 @@ class TransactionList extends StatelessWidget {
                     style: Theme.of(context).textTheme.headline6,
                   ),
                   subtitle: Text(
-                    DateFormat('d MM y').format(transaction.date),
+                    DateFormat('d/MM/y').format(transaction.date),
                   ),
                   trailing: IconButton(
                     icon: Icon(Icons.delete),

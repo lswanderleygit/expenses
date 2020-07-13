@@ -129,6 +129,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ],
       title: Text(
         'Despesas Pessoais',
+        // style: TextStyle(
+        //   fontSize: 20 * MediaQuery.of(context).textScaleFactor,
+        // ),
         // style: TextStyle(fontFamily: 'OpenSans'),
       ),
     );
@@ -144,11 +147,11 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Container(
-              height: availableHeight * 0.3,
+              height: availableHeight * 0.25,
               child: Chart(_recentTransactions),
             ),
             Container(
-              height: availableHeight * 0.7,
+              height: availableHeight * 0.75,
               child: TransactionList(_transactions, _removeTransaction),
             ),
           ],
