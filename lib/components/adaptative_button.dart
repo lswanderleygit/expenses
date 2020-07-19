@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 
-class AdaptativeButtno extends StatelessWidget {
+class AdaptativeButton extends StatelessWidget {
   final String label;
   final Function onPressed;
 
-  AdaptativeButtno({
+  AdaptativeButton({
     this.label,
     this.onPressed,
   });
