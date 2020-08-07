@@ -35,10 +35,20 @@ class TransactionList extends StatelessWidget {
             itemBuilder: (ctx, index) {
               final transaction = transactions[index];
               return TransactionItem(
+                key: GlobalObjectKey(transaction),
                 transaction: transaction,
                 onRemove: onRemove,
               );
             },
           );
+    // ListView(
+    //     children: transactions.map((tr) {
+    //       return TransactionItem(
+    //         key: ValueKey(tr.id),
+    //         transaction: tr,
+    //         onRemove: onRemove,
+    //       );
+    //     }).toList(),
+    //   );
   }
 }
